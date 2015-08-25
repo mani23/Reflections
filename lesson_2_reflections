@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A new repository is initialized/created with git init. This is the first step towards having and reaping all the benefits of having a repository i.e. saving, having commit history and all.
+
+--------------
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Working directory is the local directory on your hard drive. Staging area preps the file before commiting, ready to commit. Repository is when we finally commit the file. So the first step of the process is Working directory, second is Staging area and third is Repository. Having a staging area makes us choose our logical change before commiting.
+
+-----------------
+
