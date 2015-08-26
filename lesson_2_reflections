@@ -22,3 +22,10 @@ What are some situations when branches would be helpful in keeping your history 
 1. When we would like to try two or more things to achieve same task and see which one works better.
 2. Situation when we want the basic model to be the same but add different features henceforth. 
 3. Maybe we want two different people working on different portions of the branch, which would be later merged.
+
+or,
+1. whenever you want to do something different e.g. a new feature, removing a bug.
+2. Git Branches help you keep a project organized, particularly if you are sharing it with public. Have your master branch be your production quality branch that never breaks, always works.
+3. Then you could have a development branch where active work is being done.
+4. Then there could be experimental branches or some unique feature branches. So, you share them with public but with the understanding that the code may break.
+5. So if while working, you find a bug, branches allows to context switch and leave the feature you are working on, fix that bug and compartmentalize that work.
