@@ -13,4 +13,12 @@ Working directory is the local directory on your hard drive. Staging area preps 
 How can you use the staging area to make sure you have one commit per logical change?
 
 Using git diff and git diff --staged, we can ensure we are making only one logical change everytime. 
-git diff --staged will show us the difference between the most recent commit and the staging area, and if output is the logical change we want to commit. 
+git diff --staged will show us the difference between the most recent commit and the staging area, and if output is the logical change we want to commit.
+
+-----------------
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+1. When we would like to try two or more things to achieve same task and see which one works better.
+2. Situation when we want the basic model to be the same but add different features henceforth. 
+3. Maybe we want two different people working on different portions of the branch, which would be later merged.
