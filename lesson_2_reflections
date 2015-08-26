@@ -10,3 +10,7 @@ Working directory is the local directory on your hard drive. Staging area preps 
 
 -----------------
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using git diff and git diff --staged, we can ensure we are making only one logical change everytime. 
+git diff --staged will show us the difference between the most recent commit and the staging area, and if output is the logical change we want to commit. 
