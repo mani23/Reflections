@@ -1,0 +1,145 @@
+==========*******========
+
+
+cd ~                          # change directories to your home 
+directory. (Also if your file name has space, then use it in quotation marks i.e. ""  e.g. "Git And GitHub".)
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+mv - to move the file just saved in the home directory.
+
+git reset --hard  
+it discards any changes in either working directory or the staging area. But any changes made from this command are irreversible because they were never committed. So exercise caution.
+
+-------
+
+Once you’ve saved your file, if you want to double-check that everything has gone as planned, try these commands:
+
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+
+---------
+ 1. Setting Up Your Workspace on Mac
+ =====================================
+
+Downloading necessary files
+
+1. Save this file (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) in your home directory with the name git-completion.bash.
+2. Save this file (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh) in your home directory with the name git-prompt.sh.
+3. Download bash_profile_course from the Downloadables section.
+If you already have a file in your home directory named .bash_profile, copy the content from bash_profile_course and paste it at the bottom of .bash_profile. Otherwise, move bash_profile_course to your home directory and rename it to .bash_profile. If you use Linux, you may need to name this file .bashrc instead of .bash_profile. (If you're curious to learn more about how bash prompts work, see this page (http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html).)
+4. To Make sure you can start your editor from the terminal
+
+5. If you use Sublime, you can do this by:- 
+	a. adding the following line to your .bash_profile (you may need to change the path if Sublime is installed in a different location for you):
+
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+Now, you can not simply add anything to .bash_profile file because these kind of files are hidden files, not for the users. So, use this command to change this file to a normal file :-
+$ mv .bash_profile bash profile
+and after adding the above mentioned line: 
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+change the bash_profile to .bash_profile again :)
+
+
+Making Git configurations
+
+	b. Run the following Git configuration commands. The first one will need to be modified if you are using a text editor other than Sublime, or if Sublime is installed in another location for you. See this page (https://help.github.com/articles/associating-text-editors-with-git/) for the correct command for a couple of other popular text editors. For any other editor, you'll need to enter the command you use to launch that editor from the terminal.
+
+	git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+	c. git config --global push.default upstream
+	d. git config --global merge.conflictstyle diff3
+(Instead of the first command, you may be able to use the simpler git config --global core.editor "subl -n -w" as shown in the video, but many students have found this does not work for them.)
+
+6. Restart the terminal
+
+You'll need to close and re-open the terminal before all your changes take effect.
+
+Changing background color
+-------------------------
+
+If you prefer the background color of Git Bash to be something other than black, you can change it in the "Defaults" menu under the "Colors" tab. If you like the background color as-is, you don't need to make any changes. close and re-open git bash too see the change.
+
+Downloading necessary files
+---------------------------
+
+Save this file (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) in your home directory with the name git-completion.bash.
+
+Save this file (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh) in your home directory with the name git-prompt.sh.
+
+Download bash_profile_course from the Downloadables section.
+If you already have a file in your home directory named .bash_profile, copy the content from bash_profile_course and paste it at the bottom of .bash_profile. Otherwise, move bash_profile_course to your home directory and rename it to .bash_profile. (If you're curious to learn more about how bash prompts work, see this page (http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)) close and re-open git bash too see the change.
+
+Making Git configurations
+-------------------------
+
+Run the following Git configuration commands. The first one will need to be modified if you are using a text editor other than Sublime, or if Sublime is installed in another location for you. See this page (https://help.github.com/articles/associating-text-editors-with-git/) for the correct command for a couple of other popular text editors. For any other editor, you'll need to enter the command you use to launch that editor from Git Bash.
+
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+
+Make sure you can start your editor from Git Bash
+-------------------------------------------------
+
+
+If you use Sublime, you can do this by adding the following line to your .bash_profile:
+
+alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+
+
+Restart Git Bash
+----------------
+
+You'll need to close and re-open Git Bash before all your changes take effect.
+
+
+
+==========******==============
+
+Use short lines
+----------------
+
+Many command line tools, including Git, are less useful if your files contain very long lines. For example, if you use diff to compare two files that have all their content on the same line, diff will only show you that the two files are different. It will not be able to pinpoint the location of the difference for you.
+
+For this reason, it is a good idea to make sure you keep your lines reasonably short when writing your reflections (or other plain-text files). The exact limit is a matter of personal preference. Many developers use a max line length of 80 to 120 characters. Some editors can automatically insert line breaks for you, but for others, like Sublime, you will need to remember to press enter when you want to create a new line.
+
+===========******===============
+
+
+------------------------------------------
+ 1. Setting Up Your Workspace on Windows
+ =========================================
+
+ Changing background color
+
+If you prefer the background color of Git Bash to be something other than black, you can change it in the "Defaults" menu under the "Colors" tab. If you like the background color as-is, you don't need to make any changes.
+
+Downloading necessary files
+
+Save this file in your home directory with the name git-completion.bash.
+Save this file in your home directory with the name git-prompt.sh.
+Download bash_profile_course from the Downloadables section.
+If you already have a file in your home directory named .bash_profile, copy the content from bash_profile_course and paste it at the bottom of .bash_profile. Otherwise, move bash_profile_course to your home directory and rename it to .bash_profile. (If you're curious to learn more about how bash prompts work, see this page.)
+Making Git configurations
+
+Run the following Git configuration commands. The first one will need to be modified if you are using a text editor other than Sublime, or if Sublime is installed in another location for you. See this page for the correct command for a couple of other popular text editors. For any other editor, you'll need to enter the command you use to launch that editor from Git Bash.
+
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+Make sure you can start your editor from Git Bash
+
+If you use Sublime, you can do this by adding the following line to your .bash_profile:
+
+alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+Restart Git Bash
+
+You'll need to close and re-open Git Bash before all your changes take effect.
+
+-------------------------------------------------------------------------------------
+=====================================================================================
+-------------------------------------------------------------------------------------
