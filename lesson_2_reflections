@@ -29,3 +29,23 @@ or,
 3. Then you could have a development branch where active work is being done.
 4. Then there could be experimental branches or some unique feature branches. So, you share them with public but with the understanding that the code may break.
 5. So if while working, you find a bug, branches allows to context switch and leave the feature you are working on, fix that bug and compartmentalize that work.
+
+----------------------
+
+How do the diagrams help you visualize the branch structure?
+
+help in retaining the memory by visulizing
+easy to understand
+
+----------------------
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When we merge two branches, we are joining the work done differently and adding them to make one file with all that work. So now we have not two but one master. We represent it like that to show that now onwards there will be one file having all that work.
+
+---------------------
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros:- one is in charge of the whole thing.
+Cons:-  you need to remembe and do it.
