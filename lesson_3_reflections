@@ -3,6 +3,26 @@ if we are working from some other computer or if we want to share our work with 
 
 ----------
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+not to create unnecessary copies of the work. Only when I have really made a logical change.
+Also, if somebody else is working on a file, automatically updating could cause a lot of confusion and errors.
+
+-----------
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+branches- is when we make a copy of last commit and make changes to that or continue new work in this copy so that the original remains unaltered or is altered by another person or is having other changes. Master is the name given to the main branch in most git repositories. Every time you create a repository, git creates a master for you.
+
+clones- makes a copy of an entire repository from the github webpage and includes the history of commits onto your computer. it takes one argument - url of the repository to copy.
+
+forks- allows to copy somebody's repository onto your account with a single click. Then you can modify it on Github or your own local machine.
+
+The fork could be used to copy someone's repository when you would like to suggest changes back to the original repository. 
+Clones could be used to directly copy the repo to one's own local computer and branching could be done on local computer.
+
+
+------------
 
 Copy the HTTPS URL, not the SSH URL!
 
