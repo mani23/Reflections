@@ -21,6 +21,24 @@ forks- allows to copy somebody's repository onto your account with a single clic
 The fork could be used to copy someone's repository when you would like to suggest changes back to the original repository. 
 Clones could be used to directly copy the repo to one's own local computer and branching could be done on local computer.
 
+------------
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+it will help when  You work offline, it saves a lot of data overhead when pushing changes to github and it gives the possibility to do a quick check which changes are made in the online repo compared to the offline repository.
+
+------------
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Without Git or GitHub I have to sent files over via email/networkshare/dropbox etc. This will work but I'm loosing the history of changes. This makes it hard to combine the work of multiple people.
+
+--------------
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+You want to make changes in a different branch so that the master branch always stays in a working state. By using a different branch, you can push your changes to GitHub for review by other people, without directly affecting the master branch.
+For small changes it is a lot quicker to make them directly in the master branch, but this comes with a risk.
 
 ------------
 
